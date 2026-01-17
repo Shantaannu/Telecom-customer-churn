@@ -1,46 +1,73 @@
-# financial-customer-churn
-End-to-end machine learning project to predict customer churn in a subscription-based financial service using historical usage and account data, and to derive actionable retention strategies to reduce revenue loss.
-
 # Financial Customer Churn Analysis
 
-## Problem Statement
-Predict customers who are likely to churn from a subscription-based financial service using historical usage and account data.
+## 📌 Problem Statement
+Subscription-based financial services face significant revenue loss due to customer churn. Retaining existing customers is often more cost-effective than acquiring new ones, making early churn identification critical.
 
-## Objective
-- Identify high-risk churn customers in advance
-- Build predictive machine learning models
-- Propose actionable retention strategies
-- Reduce revenue loss
+## 🎯 Objective
+The objective of this project is to:
+- Predict customers who are likely to churn **in advance**
+- Use historical usage and account-level data to build predictive models
+- Identify key churn-driving factors
+- Propose **data-driven, actionable retention strategies**
+- Reduce customer attrition and associated revenue loss
 
-## Dataset
-- Customer account information
-- Transaction and usage behavior
-- Subscription and tenure details
+## 📊 Dataset Overview
+The dataset includes:
+- Customer demographic and account information  
+- Subscription tenure and plan details  
+- Transaction and service usage behavior  
+- Engagement and inactivity indicators  
 
-## Approach
-1. Business understanding
-2. Exploratory Data Analysis (EDA)
-3. Feature engineering
-4. Model building and evaluation
-5. Churn risk interpretation
-6. Retention strategy recommendations
+(Target variable: `Churn`)
 
-## Models Used
+## 🧠 Approach
+1. **Business Understanding**
+   - Defined churn and business impact
+   - Identified cost of false positives vs false negatives
+
+2. **Exploratory Data Analysis (EDA)**
+   - Churn distribution analysis
+   - Feature relationships with churn
+   - Behavioral pattern identification
+
+3. **Feature Engineering**
+   - Tenure-based features
+   - Usage trend metrics
+   - Activity frequency and inactivity gaps
+
+4. **Modeling**
+   - Baseline model: Logistic Regression
+   - Tree-based models: Random Forest / Gradient Boosting
+   - Model comparison using business-relevant metrics
+
+5. **Evaluation**
+   - Precision, Recall, F1-score
+   - ROC-AUC
+   - Focus on **Recall for churners**
+
+6. **Interpretation & Insights**
+   - Feature importance analysis
+   - Risk segmentation of customers
+
+7. **Retention Strategy Design**
+   - Strategy recommendations tied directly to churn drivers
+
+## 🤖 Models Used
 - Logistic Regression
 - Random Forest
 - XGBoost (if applicable)
 
-## Key Insights
-- High churn risk patterns
-- Important churn-driving features
+## 📈 Key Insights
+- Customers with declining usage over recent periods show significantly higher churn probability
+- Short-tenure customers are more sensitive to poor early engagement
+- Inactivity duration is a stronger churn indicator than total usage volume
 
-## Retention Strategies
-- Targeted offers for high-risk users
-- Usage-based engagement campaigns
-- Pricing or plan optimization
-
-## Tech Stack
+## 🛠️ Tech Stack
 - Python
 - Pandas, NumPy
 - Scikit-learn
-- Matplotlib / Seaborn
+- Matplotlib, Seaborn
+- Jupyter Notebook
+
+## 🚀 Business Impact
+This project demonstrates how predictive analytics can be used to proactively identify high-risk customers and support targeted retention efforts, ultimately reducing revenue loss.
